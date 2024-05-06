@@ -11,6 +11,15 @@
 		A0AC7A852BE7D99900A81E12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC7A842BE7D99900A81E12 /* ContentView.swift */; };
 		A0AC7A872BE7D99A00A81E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AC7A862BE7D99A00A81E12 /* Assets.xcassets */; };
 		A0AC7A8A2BE7D99A00A81E12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AC7A892BE7D99A00A81E12 /* Preview Assets.xcassets */; };
+		A0AC7A912BE7DCC800A81E12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0AC7A902BE7DCC800A81E12 /* GoogleService-Info.plist */; };
+		A0AC7A942BE7DD1800A81E12 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A0AC7A932BE7DD1800A81E12 /* FirebaseAuth */; };
+		A0AC7A962BE7DD1800A81E12 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A0AC7A952BE7DD1800A81E12 /* FirebaseFirestore */; };
+		A0AC7A982BE7DD1800A81E12 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A0AC7A972BE7DD1800A81E12 /* FirebaseFirestoreSwift */; };
+		A0AC7A9C2BE7DD8F00A81E12 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC7A9B2BE7DD8F00A81E12 /* HomeView.swift */; };
+		A0AC7A9E2BE7DD9A00A81E12 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC7A9D2BE7DD9A00A81E12 /* Info.swift */; };
+		A0AC7AA02BE7DDF600A81E12 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC7A9F2BE7DDF600A81E12 /* Question.swift */; };
+		A0FD40B72BE818B10095C25D /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD40B62BE818B10095C25D /* QuestionView.swift */; };
+		A0FD40BB2BE819780095C25D /* Extension + View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD40BA2BE819780095C25D /* Extension + View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,12 @@
 		A0AC7A842BE7D99900A81E12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A0AC7A862BE7D99A00A81E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0AC7A892BE7D99A00A81E12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0AC7A902BE7DCC800A81E12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A0AC7A9B2BE7DD8F00A81E12 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A0AC7A9D2BE7DD9A00A81E12 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		A0AC7A9F2BE7DDF600A81E12 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		A0FD40B62BE818B10095C25D /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		A0FD40BA2BE819780095C25D /* Extension + View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0AC7A942BE7DD1800A81E12 /* FirebaseAuth in Frameworks */,
+				A0AC7A962BE7DD1800A81E12 /* FirebaseFirestore in Frameworks */,
+				A0AC7A982BE7DD1800A81E12 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +69,12 @@
 		A0AC7A812BE7D99900A81E12 /* QuizSUI */ = {
 			isa = PBXGroup;
 			children = (
-				A0AC7A822BE7D99900A81E12 /* QuizSUIApp.swift */,
-				A0AC7A842BE7D99900A81E12 /* ContentView.swift */,
+				A0FD40B92BE8194F0095C25D /* App */,
+				A0FD40B82BE8193E0095C25D /* Extensions */,
+				A0AC7A9A2BE7DD8200A81E12 /* Models */,
+				A0AC7A992BE7DD7A00A81E12 /* Views */,
 				A0AC7A862BE7D99A00A81E12 /* Assets.xcassets */,
+				A0AC7A902BE7DCC800A81E12 /* GoogleService-Info.plist */,
 				A0AC7A882BE7D99A00A81E12 /* Preview Content */,
 			);
 			path = QuizSUI;
@@ -65,6 +86,41 @@
 				A0AC7A892BE7D99A00A81E12 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0AC7A992BE7DD7A00A81E12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC7A842BE7D99900A81E12 /* ContentView.swift */,
+				A0AC7A9B2BE7DD8F00A81E12 /* HomeView.swift */,
+				A0FD40B62BE818B10095C25D /* QuestionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0AC7A9A2BE7DD8200A81E12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC7A9D2BE7DD9A00A81E12 /* Info.swift */,
+				A0AC7A9F2BE7DDF600A81E12 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0FD40B82BE8193E0095C25D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0FD40BA2BE819780095C25D /* Extension + View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0FD40B92BE8194F0095C25D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC7A822BE7D99900A81E12 /* QuizSUIApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +139,11 @@
 			dependencies = (
 			);
 			name = QuizSUI;
+			packageProductDependencies = (
+				A0AC7A932BE7DD1800A81E12 /* FirebaseAuth */,
+				A0AC7A952BE7DD1800A81E12 /* FirebaseFirestore */,
+				A0AC7A972BE7DD1800A81E12 /* FirebaseFirestoreSwift */,
+			);
 			productName = QuizSUI;
 			productReference = A0AC7A7F2BE7D99900A81E12 /* QuizSUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +172,9 @@
 				Base,
 			);
 			mainGroup = A0AC7A762BE7D99900A81E12;
+			packageReferences = (
+				A0AC7A922BE7DD1800A81E12 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A0AC7A802BE7D99900A81E12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +191,7 @@
 			files = (
 				A0AC7A8A2BE7D99A00A81E12 /* Preview Assets.xcassets in Resources */,
 				A0AC7A872BE7D99A00A81E12 /* Assets.xcassets in Resources */,
+				A0AC7A912BE7DCC800A81E12 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +202,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FD40BB2BE819780095C25D /* Extension + View.swift in Sources */,
+				A0AC7AA02BE7DDF600A81E12 /* Question.swift in Sources */,
+				A0AC7A9C2BE7DD8F00A81E12 /* HomeView.swift in Sources */,
+				A0AC7A9E2BE7DD9A00A81E12 /* Info.swift in Sources */,
 				A0AC7A852BE7D99900A81E12 /* ContentView.swift in Sources */,
+				A0FD40B72BE818B10095C25D /* QuestionView.swift in Sources */,
 				A0AC7A832BE7D99900A81E12 /* QuizSUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,13 +342,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"QuizSUI/Preview Content\"";
+				DEVELOPMENT_TEAM = KSKFLS4ZH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,9 +358,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wupiupi.QuizSUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,13 +376,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"QuizSUI/Preview Content\"";
+				DEVELOPMENT_TEAM = KSKFLS4ZH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,9 +392,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wupiupi.QuizSUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -342,6 +424,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0AC7A922BE7DD1800A81E12 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0AC7A932BE7DD1800A81E12 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0AC7A922BE7DD1800A81E12 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A0AC7A952BE7DD1800A81E12 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0AC7A922BE7DD1800A81E12 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A0AC7A972BE7DD1800A81E12 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0AC7A922BE7DD1800A81E12 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0AC7A772BE7D99900A81E12 /* Project object */;
 }
